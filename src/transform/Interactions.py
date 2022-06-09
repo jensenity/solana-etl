@@ -42,7 +42,7 @@ class Interactions:
     def __len__(self):
         return len(self.interactions)
 
-    def by_type(self) -> dict[Type[T], List[Interaction]]:
+    def by_type(self):
         by_type = defaultdict(lambda: [])
 
         for interaction in self.interactions:
