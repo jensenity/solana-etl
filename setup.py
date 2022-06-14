@@ -38,6 +38,6 @@ setuptools.setup(
         'neo4j==4.4.1',
         'numpy==1.22.0',
         'pandas==1.3.5',
-        'solana==0.19.0'
+        'solana==0.24.0'
     ]
 )
