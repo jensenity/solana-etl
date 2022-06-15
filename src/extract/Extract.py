@@ -112,16 +112,16 @@ class Extract:
 
                 num_blocks += 1
 
-            if num_blocks % 60 == 0:
-                print(f'Extracted {num_blocks} blocks ending on {slot} with average times: '
-                      f'call: {call_time/num_blocks:.2f}s, '
-                      f'call with wait: {call_time_with_wait/num_blocks:.2f}s, '
-                      f'process: {process_time/num_blocks:.2f}s.')
+            # if num_blocks % 60 == 0:
+            #     print(f'Extracted {num_blocks} blocks ending on {slot} with average times: '
+            #           f'call: {call_time/num_blocks:.2f}s, '
+            #           f'call with wait: {call_time_with_wait/num_blocks:.2f}s, '
+            #           f'process: {process_time/num_blocks:.2f}s.')
 
-                num_blocks = 0
-                call_time = 0
-                call_time_with_wait = 0
-                process_time = 0
+            #     num_blocks = 0
+            #     call_time = 0
+            #     call_time_with_wait = 0
+            #     process_time = 0
 
 
     @abstractmethod
