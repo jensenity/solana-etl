@@ -52,7 +52,7 @@ class TokenTransfer(Transfer):
         elif destination in balance_changes:
             balance_change = balance_changes[destination]
         else:
-            raise Exception()
+            raise Exception("Both source and destination is not in balance_changes.")
 
         if 'authority' in instruction.info_accounts:
             authority = instruction.info_accounts['authority'].key
